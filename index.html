@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        canvas{
+            /*background-color: #3c8be0;*/
+        }
+    </style>
+</head>
+<body>
+<audio src="res/bgm.ogg" autoplay loop></audio>
+<audio src="res/jump.ogg" id="jump"></audio>
+<audio src="res/died.ogg" id="gameover"></audio>
+<audio src="res/run.ogg" id="run"></audio>
+<audio src="res/dollor.ogg" id="dolloar"></audio>
+<audio src="res/fly.ogg" id="fly"></audio>
+<audio src="res/gg.ogg" id="gg"></audio>
+<audio src="res/beat.ogg" id="beat"></audio>
+
+
+<canvas id="mycanvas"></canvas>
+
+
+<div><h3>游戏说明:</h3></div>
+<div><p>空格键:跳跃   下键:闪避   V键:加速</p></div>
+<p>提示: 使用下键闪避时，将无法使用空格键跳跃</p>
+
+<script src="js/lib/simpleInheritance.js"></script>
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/Background.js"></script>
+<script src="js/land.js"></script>
+<script src="js/Person.js"></script>
+<script src="js/barrier.js"></script>
+<script src="js/missile.js"></script>
+<script src="js/barrier01.js"></script>
+<script src="js/Dolloar.js"></script>
+<script src="js/barrier03.js"></script>
+<script src="js/SceneManager.js"></script>
+<script src="js/barrier02.js"></script>
+<script>
+    var game=new Game();
+</script>
+</body>
+</html>
